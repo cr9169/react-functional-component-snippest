@@ -1,0 +1,31 @@
+Go to File - Preferences - Configure User Snippets
+
+Dropdown will appear. Select New Global Snippets file and type <any-name> you want and hit enter
+
+File should be created with the following name <any-name>.code-snippet
+
+Paste this code. Anything you type in prefix will be your component trigger
+
+{
+	"React Functional Component": {
+	  "prefix": "rfc",
+	  "body": [
+		"import './${TM_FILENAME_BASE}.scss';",
+		"",
+		"interface ${TM_FILENAME_BASE}Props {}",
+		"",
+		"const ${TM_FILENAME_BASE}: React.FC<${TM_FILENAME_BASE}Props> = ({}) => {",
+		"  return <div></div>;",
+		"};",
+		"",
+		"export default ${TM_FILENAME_BASE};",
+		""
+	  ],
+	  "description": "React Functional Component with SCSS Import"
+	}
+  }
+  
+
+Save the file
+
+Type (in this case) rfc and hit enter.
